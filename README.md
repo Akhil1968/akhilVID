@@ -1,4 +1,4 @@
-# handlebars template engine with bootstrap
+# Video Streaming application
 a node.js application using express.js, handlebars template engine and bootstrap
 it explains the following
    Middleware- body-parser

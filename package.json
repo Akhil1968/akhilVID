@@ -1,7 +1,7 @@
 {
-  "name": "handlebars-transport",
+  "name": "VideoOnDemand",
   "version": "1.0.0",
-  "description": "Transport Hub application using handlebars",
+  "description": "VideoOnDemand application using Node & Express",
   "main": "app.js",
   "scripts": {
     "test": "nodemon app.js"

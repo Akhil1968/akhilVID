@@ -3,15 +3,15 @@
     <div class="col-md-6 col-md-offset-0 panel panel-default">
       <h3 align="center" class="margin-base-vertical">Hi {{welcomeMessage}}! </h3>
       <p class="help-block text-center">
-          Depending on your interest, I'll take you to a city.  
+          Depending on your choice, I'll stream you a video.  
       </p>
-      <form class="margin-base-vertical" method="post" action="/toCity" role="form">
+      <form class="margin-base-vertical" method="get" action="/toVideo" role="form">
         <div class="form-group"> 
           <label for="interest">What's your interest?</label>
           <select  required class="form-control" name="interest" id="interest" >
-            <option value="finance">Business</option>
-            <option value="fashion">Fashion</option>
-            <option value="history">History</option>
+            <option value="meanintro">MEAN Stack Introduction</option>
+            <option value="x">X</option>
+            <option value="y">Y</option>
           </select>
         </div>
         <p class="text-center">

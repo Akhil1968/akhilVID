@@ -28,30 +28,3 @@ exports.landingHandler = function(req, res){
 										LOGGEDIN:req.session.loggedin});
 }//landingHandler
 
-exports.cityHandler = function(req, res){
-	var interestValue = req.body.interest;
-	var cityNameValue, taglineValue;
-	console.log("received interestValue  as " + interestValue);
-	var imageArray = [];
-
-	if (interestValue === 'history'){
-		cityNameValue = 'Rome';
-		taglineValue = 'The city of earliest civilization';
-		imageArray = [1,2];
-	}else if (interestValue === 'fashion'){
-		cityNameValue = 'Paris';
-		taglineValue = 'The fashion capital of the world';
-		imageArray = [1,2,3];
-	}else if (interestValue === 'finance'){
-		cityNameValue = 'New York';
-		taglineValue = 'The business capital of the world';
-		imageArray = [1,2,3,4,5,6];
-	}
-	
-	res.render('city.handlebars', {cityName:cityNameValue, 
-						tagline: taglineValue, 
-						welcomeMessage:req.session.userName,
-						imageArray:imageArray,
-						LOGGEDIN:req.session.loggedin});
-
-}//cityHandler
